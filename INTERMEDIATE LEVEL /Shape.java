@@ -16,15 +16,15 @@ class Triangle extends Shape {
 }
 
 class Rectangle extends Shape {
-    double length, breadth;
+    double length, width;
 
-    Rectangle(double length, double breadth) {
+    Rectangle(double length, double width) {
         this.length = length;
-        this.breadth = breadth;
+        this.width = width;
     }
 
     double area() {
-        return length * breadth;
+        return length * width;
     }
 }
 
@@ -40,11 +40,11 @@ class Circle extends Shape {
     }
 }
 
-public class ShapeTest {
+ class Main {
     public static void main(String[] args) {
         Shape t = new Triangle(10, 5);
-        Shape r = new Rectangle(6, 4);
-        Shape c = new Circle(3);
+        Shape r = new Rectangle(8, 4);
+        Shape c = new Circle(7);
 
         System.out.println("Area of Triangle: " + t.area());
         System.out.println("Area of Rectangle: " + r.area());
